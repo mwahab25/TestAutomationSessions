@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitAndSelenium", "NUnitAn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearStructureScripting", "LinearStructureScripting\LinearStructureScripting.csproj", "{8153E045-E3EE-4B8A-A4BF-5FEDDA433EDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAndKeywordDriven", "DataAndKeywordDriven\DataAndKeywordDriven.csproj", "{4C6EA908-E2A9-4073-9380-C05ED3E2B5A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataDriven", "DataAndKeywordDriven\DataDriven.csproj", "{4C6EA908-E2A9-4073-9380-C05ED3E2B5A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeywordDriven", "KeywordDriven\KeywordDriven.csproj", "{4FE04671-D85E-4DA0-869A-00F31443D4EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4C6EA908-E2A9-4073-9380-C05ED3E2B5A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C6EA908-E2A9-4073-9380-C05ED3E2B5A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C6EA908-E2A9-4073-9380-C05ED3E2B5A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE04671-D85E-4DA0-869A-00F31443D4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE04671-D85E-4DA0-869A-00F31443D4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE04671-D85E-4DA0-869A-00F31443D4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE04671-D85E-4DA0-869A-00F31443D4EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

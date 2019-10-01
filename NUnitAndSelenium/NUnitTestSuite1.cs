@@ -101,7 +101,6 @@ namespace NUnitAndSelenium
 
             //Click on Link text
             driver.FindElement(By.LinkText("Name of the Link")).Click();
-
         }
 
         [Test]
@@ -109,8 +108,7 @@ namespace NUnitAndSelenium
         [Category("Task distribution")]
         public void TestCase2(int target1, double target2, int target3)
         {
-            // Test method steps
-
+            //Test method steps
             //Implicit Wait
             driver.Navigate().GoToUrl("http://www.bravo.com/");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(50);
