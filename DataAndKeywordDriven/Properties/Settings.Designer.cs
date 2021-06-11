@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LinearStructureScripting.Properties {
+namespace DataDriven.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DataDriven
+namespace AppiumMobile
 {
     [TestClass]
     public class UnitTest1

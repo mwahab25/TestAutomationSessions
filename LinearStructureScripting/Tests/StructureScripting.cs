@@ -5,6 +5,8 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
 using NUnit.Framework;
+using System.Threading;
+using LinearStructureScripting.Properties;
 
 namespace LinearStructureScripting.Tests
 {
@@ -18,13 +20,21 @@ namespace LinearStructureScripting.Tests
             //so you can use POM in other test methods
             //Note you can mange waiting by implicit or explict waiting methods.
 
-            driver.Url = "http://www.store.demoqa.com";
+            driver.Url = Settings.Default.URL;
 
-            var homePage = new HomePage(driver);
-            homePage.ClickOnMyAccount();
-
-            var loginPage = new LoginPage(driver);
+            LoginPage loginPage = new LoginPage(driver);
             loginPage.LoginToApplication();
+
+            Thread.Sleep(10000);
+
+            HomePage homePage = new HomePage(driver);
+            homePage.ClickOnAddBtn();
+
+            Thread.Sleep(5000);
+
+            driver.Navigate().Back();
+            Thread.Sleep(5000);
+
         }
     }
 }

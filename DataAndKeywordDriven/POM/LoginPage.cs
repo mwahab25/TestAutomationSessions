@@ -1,9 +1,10 @@
 ﻿using System;
+using DataDriven.TestData;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 
-namespace LinearStructureScripting.POM
+namespace DataDriven.POM
 {
     public class LoginPage
     {
@@ -27,12 +28,13 @@ namespace LinearStructureScripting.POM
             PageFactory.InitElements(driver, this);
         }
 
-        public void LoginToApplication()
+        public void LoginToApplication(string testName)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             wait.Until(ExpectedConditions.ElementToBeClickable(UserName));
-            UserName.SendKeys("admin");
-            Password.SendKeys("123456");
+            var userData = ExcelDataAccess.GetTestData(testName);
+            UserName.SendKeys(userData.Username);
+            Password.SendKeys(userData.Password);
             LoginBtn.Click();
         }
     }
